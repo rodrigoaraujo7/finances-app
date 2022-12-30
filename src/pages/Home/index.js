@@ -7,7 +7,7 @@ import { Header } from '../../components/Header'
 export const Home = () => {
   return (
     <View style={styles.container}>
-        <Header />
+        <Header name="Rodrigo L. Araujo" />
         <Text>Home Page</Text>
     </View>
   );
