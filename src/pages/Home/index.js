@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+// components
+import { Header } from '../../components/Header'
+
 export const Home = () => {
   return (
     <View style={styles.container}>
-      <Text>Home Page</Text>
-      <StatusBar style="auto" />
+        <Header />
+        <Text>Home Page</Text>
     </View>
   );
 }
@@ -13,8 +16,6 @@ export const Home = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#fff'
   },
 });
