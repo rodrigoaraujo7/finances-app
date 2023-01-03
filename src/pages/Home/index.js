@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, FlatList } from 'react-native';
 // components
 import { Header } from '../../components/Header'
 import { Balance } from '../../components/Balance';
+import { Movements } from '../../components/Movements';
 
 const list = [
   {
@@ -40,7 +41,7 @@ export const Home = () => {
           data={list}
           keyExtractor={item => String(item.id)} // transform id number to string
           showsVerticalScrollIndicator={false} // remove vertical scroll
-          renderItem={({ item }) => <Text>Teste</Text>}
+          renderItem={({ item }) => <Movements data={item} />}
         />
     </View>
   );
