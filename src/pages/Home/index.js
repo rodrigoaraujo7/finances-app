@@ -6,29 +6,10 @@ import { Balance } from '../../components/Balance';
 import { Movements } from '../../components/Movements';
 import { Actions } from '../../components/Actions';
 
-const list = [
-  {
-    id: 1,
-    label: 'Supreme T-Shirt',
-    value: '1.250,00',
-    date: '17/07/2022',
-    type: 0 // 0 -> spending
-  },
-  {
-    id: 2,
-    label: 'Wage',
-    value: '4.850,00',
-    date: '10/11/2022',
-    type: 1 // 1 -> earnings
-  },
-  {
-    id: 3,
-    label: 'Mechanical Keyboard',
-    value: '850,00',
-    date: '19/12/2022',
-    type: 0 // 0 -> spending
-  }
-]
+// data base
+import { data } from '../../data';
+
+const list = data
 
 export const Home = () => {
   return (

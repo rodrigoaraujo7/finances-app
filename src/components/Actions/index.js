@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     },
     actionButton: {
         alignItems: 'center',
-        marginRight: 32
+        marginRight: 25
     },
     areaButton: {
         justifyContent: 'center',
