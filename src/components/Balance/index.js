@@ -4,9 +4,26 @@ import {
     StyleSheet
 } from 'react-native'
 
+import { MotiView } from 'moti'
+
 export const Balance = ({ balance, spending }) => {
     return (
-        <View style={styles.container}>
+        <MotiView 
+            style={styles.container}
+            from={{
+                rotateX: '-100deg',
+                opacity: 0
+            }}
+            animate={{
+                rotateX: '0deg',
+                opacity: 1
+            }}
+            transition={{
+                type: 'timing',
+                delay: 300,
+                duration: 900
+            }}
+        >
             <View style={styles.item}>
                 <Text style={styles.itemTitle}>Balance</Text>
                 <View style={styles.content}>
@@ -22,7 +39,7 @@ export const Balance = ({ balance, spending }) => {
                     <Text style={styles.spending}>-{spending}</Text>
                 </View>
             </View>
-        </View>
+        </MotiView>
     )
 }
 
